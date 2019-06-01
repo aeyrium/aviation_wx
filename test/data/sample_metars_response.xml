@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XML-Schema-instance" version="1.2" xsi:noNamespaceSchemaLocation="http://aviationweather.gov/adds/schema/metar1_2.xsd">
+  <request_index>10469066</request_index>
+  <data_source name="metars" />
+  <request type="retrieve" />
+  <errors />
+  <warnings />
+  <time_taken_ms>4</time_taken_ms>
+  <data num_results="2">
+    <METAR>
+      <raw_text>KSFO 220656Z 28016KT 8SM FEW017 SCT034 BKN060 12/09 A2987 RMK AO2 PK WND 28027/0643 RAB28E39 SLP115 P0000 T01170094</raw_text>
+      <station_id>KSFO</station_id>
+      <observation_time>2019-05-22T06:56:00Z</observation_time>
+      <latitude>37.62</latitude>
+      <longitude>-122.37</longitude>
+      <temp_c>11.7</temp_c>
+      <dewpoint_c>9.4</dewpoint_c>
+      <wind_dir_degrees>280</wind_dir_degrees>
+      <wind_speed_kt>16</wind_speed_kt>
+      <visibility_statute_mi>8.0</visibility_statute_mi>
+      <altim_in_hg>29.870079</altim_in_hg>
+      <sea_level_pressure_mb>1011.5</sea_level_pressure_mb>
+      <quality_control_flags>
+        <auto_station>TRUE</auto_station>
+      </quality_control_flags>
+      <sky_condition sky_cover="FEW" cloud_base_ft_agl="1700" />
+      <sky_condition sky_cover="SCT" cloud_base_ft_agl="3400" />
+      <sky_condition sky_cover="BKN" cloud_base_ft_agl="6000" />
+      <flight_category>VFR</flight_category>
+      <precip_in>0.005</precip_in>
+      <metar_type>METAR</metar_type>
+      <elevation_m>3.0</elevation_m>
+    </METAR>
+    <METAR>
+      <raw_text>KRNO 220655Z 34008KT 10SM BKN040 BKN070 08/M01 A2975 RMK AO2 SLP054 T00781011</raw_text>
+      <station_id>KRNO</station_id>
+      <observation_time>2019-05-22T06:55:00Z</observation_time>
+      <latitude>39.5</latitude>
+      <longitude>-119.77</longitude>
+      <temp_c>7.8</temp_c>
+      <dewpoint_c>-1.1</dewpoint_c>
+      <wind_dir_degrees>340</wind_dir_degrees>
+      <wind_speed_kt>8</wind_speed_kt>
+      <visibility_statute_mi>10.0</visibility_statute_mi>
+      <altim_in_hg>29.749016</altim_in_hg>
+      <sea_level_pressure_mb>1005.4</sea_level_pressure_mb>
+      <quality_control_flags>
+        <auto_station>TRUE</auto_station>
+      </quality_control_flags>
+      <sky_condition sky_cover="BKN" cloud_base_ft_agl="4000" />
+      <sky_condition sky_cover="BKN" cloud_base_ft_agl="7000" />
+      <flight_category>VFR</flight_category>
+      <metar_type>METAR</metar_type>
+      <elevation_m>1342.0</elevation_m>
+    </METAR>
+  </data>
+</response>

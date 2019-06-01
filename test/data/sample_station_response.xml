@@ -1,0 +1,42 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XML-Schema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://weather.aero/schema/station1_0.xsd">
+  <request_index>79108851</request_index>
+  <data_source name="stations" />
+  <request type="retrieve" />
+  <errors />
+  <warnings />
+  <time_taken_ms>3</time_taken_ms>
+  <data num_results="2">
+    <Station>
+      <station_id>KOAK</station_id>
+      <wmo_id>72493</wmo_id>
+      <latitude>37.72</latitude>
+      <longitude>-122.23</longitude>
+      <elevation_m>26.0</elevation_m>
+      <site>OAKLAND</site>
+      <state>CA</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+        <rawinsonde />
+        <TAF />
+      </site_type>
+    </Station>
+    <Station>
+      <station_id>KSFO</station_id>
+      <wmo_id>72494</wmo_id>
+      <latitude>37.62</latitude>
+      <longitude>-122.37</longitude>
+      <elevation_m>3.0</elevation_m>
+      <site>SAN FRANCISCO</site>
+      <state>CA</state>
+      <country>US</country>
+      <site_type>
+        <METAR />
+        <TAF />
+      </site_type>
+    </Station>
+  </data>
+</response>
+

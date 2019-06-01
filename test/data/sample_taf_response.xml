@@ -1,0 +1,405 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XML-Schema-instance" version="1.2" xsi:noNamespaceSchemaLocation="http://aviationweather.gov/adds/schema/taf1_2.xsd">
+  <request_index>27374140</request_index>
+  <data_source name="tafs" />
+  <request type="retrieve" />
+  <errors />
+  <warnings />
+  <time_taken_ms>12</time_taken_ms>
+  <data num_results="9">
+    <TAF>
+      <raw_text>PHTO 011833Z 0119/0218 23005KT P6SM VCSH SCT030 BKN045 FM012000 12010KT P6SM VCSH SCT025 BKN045 FM020600 23007KT P6SM VCSH SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T18:33:00Z</issue_time>
+      <bulletin_time>2019-06-01T18:33:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T19:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T18:00:00Z</valid_time_to>
+      <remarks>AMD</remarks>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T19:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="3000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>120</wind_dir_degrees>
+        <wind_speed_kt>10</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T18:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>7</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 011741Z 0118/0218 23005KT P6SM VCSH BKN030 BKN045 FM012000 12010KT P6SM VCSH SCT025 BKN045 FM020600 23007KT P6SM VCSH SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T17:41:00Z</issue_time>
+      <bulletin_time>2019-06-01T17:41:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T18:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T18:00:00Z</valid_time_to>
+      <remarks>COR</remarks>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T18:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="3000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>120</wind_dir_degrees>
+        <wind_speed_kt>10</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T18:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>7</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 011739Z 0118/0218 23005KT P6SM VCSH SCT025 BKN070 FM012000 12010KT P6SM VCSH SCT025 BKN045 FM020600 23007KT P6SM VCSH SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T17:39:00Z</issue_time>
+      <bulletin_time>2019-06-01T17:39:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T18:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T18:00:00Z</valid_time_to>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T18:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="7000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>120</wind_dir_degrees>
+        <wind_speed_kt>10</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T18:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>7</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 011423Z 0114/0212 23005KT P6SM VCSH SCT025 BKN070 FM012000 10011KT P6SM VCSH SCT025 BKN045 FM020600 23006KT P6SM SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T14:23:00Z</issue_time>
+      <bulletin_time>2019-06-01T14:23:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T14:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T12:00:00Z</valid_time_to>
+      <remarks>AMD</remarks>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T14:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="7000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T12:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>6</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 011120Z 0112/0212 23005KT P6SM VCSH BKN020 BKN035 OVC060 FM012000 10011KT P6SM VCSH SCT025 BKN045 FM020600 23006KT P6SM SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T11:20:00Z</issue_time>
+      <bulletin_time>2019-06-01T11:20:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T12:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T12:00:00Z</valid_time_to>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T12:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="2000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="3500" />
+        <sky_condition sky_cover="OVC" cloud_base_ft_agl="6000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T12:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>6</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 010539Z 0106/0206 23005KT P6SM VCSH SCT020 SCT030 BKN060 FM012000 10011KT P6SM VCSH SCT025 BKN045 FM020500 23006KT P6SM SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T05:39:00Z</issue_time>
+      <bulletin_time>2019-06-01T05:39:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T06:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T06:00:00Z</valid_time_to>
+      <remarks>AMD</remarks>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2000" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="3000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="6000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T05:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T05:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>6</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 010527Z 0106/0206 23005KT P6SM VCSH SCT020 BKN030 BKN060 FM012000 10011KT P6SM VCSH SCT025 BKN045 FM020500 23006KT P6SM SCT025 SCT050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-06-01T05:27:00Z</issue_time>
+      <bulletin_time>2019-06-01T05:27:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T06:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T06:00:00Z</valid_time_to>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="3000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="6000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T05:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-02T05:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>6</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 312320Z 0100/0124 10011KT P6SM VCSH SCT025 BKN035 OVC060 FM010600 23005KT P6SM VCSH SCT020 BKN035 BKN050 FM012000 10011KT P6SM SCT025 BKN045</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-05-31T23:20:00Z</issue_time>
+      <bulletin_time>2019-05-31T23:20:00Z</bulletin_time>
+      <valid_time_from>2019-06-01T00:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-02T00:00:00Z</valid_time_to>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-06-01T00:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T06:00:00Z</fcst_time_to>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="3500" />
+        <sky_condition sky_cover="OVC" cloud_base_ft_agl="6000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T20:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2000" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="3500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="5000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T20:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-02T00:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>11</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4500" />
+      </forecast>
+    </TAF>
+    <TAF>
+      <raw_text>PHTO 311732Z 3118/0118 24006KT P6SM VCSH SCT025 BKN040 OVC060 FM312200 10009KT P6SM VCSH SCT025 SCT050 FM010600 23005KT P6SM VCSH SCT025 BKN050</raw_text>
+      <station_id>PHTO</station_id>
+      <issue_time>2019-05-31T17:32:00Z</issue_time>
+      <bulletin_time>2019-05-31T17:32:00Z</bulletin_time>
+      <valid_time_from>2019-05-31T18:00:00Z</valid_time_from>
+      <valid_time_to>2019-06-01T18:00:00Z</valid_time_to>
+      <latitude>19.72</latitude>
+      <longitude>-155.05</longitude>
+      <elevation_m>12.0</elevation_m>
+      <forecast>
+        <fcst_time_from>2019-05-31T18:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-05-31T22:00:00Z</fcst_time_to>
+        <wind_dir_degrees>240</wind_dir_degrees>
+        <wind_speed_kt>6</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="4000" />
+        <sky_condition sky_cover="OVC" cloud_base_ft_agl="6000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-05-31T22:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T06:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>100</wind_dir_degrees>
+        <wind_speed_kt>9</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="5000" />
+      </forecast>
+      <forecast>
+        <fcst_time_from>2019-06-01T06:00:00Z</fcst_time_from>
+        <fcst_time_to>2019-06-01T18:00:00Z</fcst_time_to>
+        <change_indicator>FM</change_indicator>
+        <wind_dir_degrees>230</wind_dir_degrees>
+        <wind_speed_kt>5</wind_speed_kt>
+        <visibility_statute_mi>6.21</visibility_statute_mi>
+        <wx_string>VCSH</wx_string>
+        <sky_condition sky_cover="SCT" cloud_base_ft_agl="2500" />
+        <sky_condition sky_cover="BKN" cloud_base_ft_agl="5000" />
+      </forecast>
+    </TAF>
+  </data>
+</response>
+

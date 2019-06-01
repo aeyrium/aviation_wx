@@ -1,0 +1,14 @@
+<Station>
+  <station_id>KSFO</station_id>
+  <wmo_id>72494</wmo_id>
+  <latitude>37.62</latitude>
+  <longitude>-122.37</longitude>
+  <elevation_m>3.0</elevation_m>
+  <site>SAN FRANCISCO</site>
+  <state>CA</state>
+  <country>US</country>
+  <site_type>
+    <METAR />
+    <TAF />
+  </site_type>
+</Station>
