@@ -9,8 +9,8 @@ void main() {
       print('Here is: ${metar.station} ${metar.observationTime}');
     });
     expect(metars.length, 2);
-    expect(metars[0].station, matches(RegExp('KRNO|KSFO')));
-    expect(metars[1].station, matches(RegExp('KRNO|KSFO')));
+    expect(metars[0].station, isIn(stations));
+    expect(metars[1].station, isIn(stations));
   });
 
   test('Download METARs with Errors', () async {
