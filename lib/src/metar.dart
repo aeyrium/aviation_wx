@@ -12,7 +12,7 @@ class METAR {
   String station;
 
   /// Time( in ISO8601 date/time format) this METAR was observed.
-  String observationTime;
+  DateTime observationTime;
 
   /// The latitude (in decimal degrees )of the station that reported this METAR
   double latitude;
@@ -69,27 +69,6 @@ class METAR {
   /// The elevation of the station that reported this METAR (in meters)
   double elevation;
 
-  /// Default constructor
-  METAR({
-    this.rawText,
-    this.station,
-    this.observationTime,
-    this.latitude,
-    this.longitude,
-    this.temp,
-    this.dewPoint,
-    this.windDirection,
-    this.windSpeed,
-    this.windGust,
-    this.visibility,
-    this.altimeter,
-    this.seaLevelPressure,
-    this.skyConditions,
-    this.flightCategory,
-    this.elevation,
-    this.precipitation,
-  });
-
   /// Creates a new instance of [METAR] from an [XmlElement] that should
   /// follow the [METAR Field Descriptions](https://aviationweather.gov/dataserver/fields?datatype=metar)
   METAR.fromXmlElement(XmlElement node) {
@@ -101,7 +80,7 @@ class METAR {
         } else if (e.name.local == 'station_id') {
           station = e.text;
         } else if (e.name.local == 'observation_time') {
-          observationTime = e.text;
+          observationTime = DateTime.tryParse(e.text);
         } else if (e.name.local == 'latitude') {
           latitude = double.parse(e.text);
         } else if (e.name.local == 'longitude') {

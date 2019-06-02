@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:test/test.dart';
 import 'package:xml/xml.dart' as xml;
-import 'package:aviation_wx/aviation_ws.dart';
+import 'package:aviation_wx/aviation_wx.dart';
 
 void main() {
   test('METAR fromXmlElement', () async {
@@ -11,7 +11,13 @@ void main() {
     expect(metar.rawText,
         'KSFO 220656Z 28016KT 8SM FEW017 SCT034 BKN060 12/09 A2987 RMK AO2 PK WND 28027/0643 RAB28E39 SLP115 P0000 T01170094');
     expect(metar.station, 'KSFO');
-    expect(metar.observationTime, '2019-05-22T06:56:00Z');
+    expect(metar.observationTime.year, 2019); // '2019-05-22T06:56:00Z'
+    expect(metar.observationTime.month, 5);
+    expect(metar.observationTime.day, 22);
+    expect(metar.observationTime.hour, 6);
+    expect(metar.observationTime.minute, 56);
+    expect(metar.observationTime.second, 0);
+    expect(metar.observationTime.timeZoneName, 'UTC');
     expect(metar.latitude, 37.62);
     expect(metar.longitude, -122.37);
     expect(metar.temp, 11.7);
