@@ -1,7 +1,11 @@
 import './nooa_text_data.dart';
 import './metar.dart';
 
-class WeatherService {
+class WXService {
+  /// Returns a map of [METAR]s grouped by station and observation time.
+  /// The param [stations] is a list of station identifiers in ICAO format
+  /// and [hoursBefore] is the number of hours earlier to return previous
+  /// [METAR]s for each of the [stations].
   static Future<Map<String, List<METAR>>> downloadMETARs(
     List<String> stations,
     int hoursBefore,
