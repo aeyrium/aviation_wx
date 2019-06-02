@@ -3,27 +3,43 @@ import 'package:aviation_wx/aviation_wx.dart';
 
 void main() {
   test('Download KRNO and KSFO METARs', () async {
-    List<String> stations = ['KRNO', 'KSFO'];
-    List<METAR> metars = await WeatherService.downloadMETARs(stations, 1);
-    metars.forEach((metar) {
-      print('Here is: ${metar.station} ${metar.observationTime}');
-    });
-    expect(metars.length, greaterThan(1));
-    expect(metars[0].station, isIn(stations));
-    expect(metars[1].station, isIn(stations));
+    var stations = ['KRNO', 'KSFO'];
+    var metars = await WeatherService.downloadMETARs(stations, 1);
+    expect(metars.keys.length, 2);
+    expect(metars['KRNO'], isNotNull);
+    expect(metars['KRNO'].length, greaterThan(0));
+    expect(metars['KSFO'], isNotNull);
+    expect(metars['KSFO'].length, greaterThan(0));
   });
 
   test('Download METARs with not results', () async {
-    List<String> stations = ['Kxxx', 'KS55'];
-    List<METAR> metars = await WeatherService.downloadMETARs(stations, 1);
-    expect(metars.length, 0);
+    var stations = ['Kxxx', 'KS55'];
+    var metars = await WeatherService.downloadMETARs(stations, 1);
+    expect(metars.isEmpty, isTrue);
   });
 
   test('Download METARs with bad data', () async {
-    List<String> stations = ['Kxxx', 'KS55'];
+    var stations = ['Kxxx', 'KS55'];
     expect(
       () => WeatherService.downloadMETARs(stations, -1),
       throwsArgumentError,
     );
+  });
+
+  test('Confirm results are sorted', () async {
+    var stations = ['KMEV', 'KOAK', 'KRNO', 'KSFO'];
+    var metars = await WeatherService.downloadMETARs(stations, 4);
+    expect(metars.keys.length, 4);
+    stations.forEach((station) {
+      expect(metars[station], isNotNull);
+      expect(metars[station].length, greaterThan(0));
+      for (var ndx = 1; ndx < metars[station].length; ndx++) {
+        expect(
+            metars[station][ndx - 1]
+                .observationTime
+                .isBefore(metars[station][ndx].observationTime),
+            isTrue);
+      }
+    });
   });
 }
