@@ -4,6 +4,8 @@ version: 0.0.1
 authors:
 - Rodney Aiglstorfer <rodney@aeyrium.com>
 
+homepage: http://aeyrium.com
+
 repository: https://github.com/aeyrium/aviation_wx.git
 
 environment:

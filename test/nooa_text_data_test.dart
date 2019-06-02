@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:aviation_wx/src/nooa_text_data.dart';
+import 'package:aviation_wx/src/utils/nooa_text_data.dart';
 
 main() {
   group('NOOA Text Data', () {

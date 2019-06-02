@@ -1,12 +1,10 @@
-import 'dart:io';
 import 'package:test/test.dart';
-import 'package:xml/xml.dart' as xml;
-import 'package:aviation_wx/aviation_wx.dart';
+import 'package:aviation_wx/src/utils/wx_utils.dart';
 
 void main() {
   test('METAR fromXmlElement', () async {
-    var document = await _loadXML('test/data/sample_metar_ksfo.xml');
-    var metar = METAR.fromXmlElement(document.rootElement);
+    var document = await loadXMLFile('test/data/sample_metar_ksfo.xml');
+    var metar = parseMETAR(document.rootElement);
 
     expect(metar.rawText,
         'KSFO 220656Z 28016KT 8SM FEW017 SCT034 BKN060 12/09 A2987 RMK AO2 PK WND 28027/0643 RAB28E39 SLP115 P0000 T01170094');
@@ -46,10 +44,4 @@ void main() {
     expect(metar.snowDepth, 0);
     expect(metar.verticalVisibility, null);
   });
-}
-
-Future<xml.XmlDocument> _loadXML(String path) async {
-  File f = File('test/data/sample_metar_ksfo.xml');
-  String xmlString = await f.readAsString();
-  return xml.parse(xmlString);
 }

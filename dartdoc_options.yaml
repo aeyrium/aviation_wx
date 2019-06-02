@@ -1,0 +1,10 @@
+dartdoc:
+  categories: 
+    "Getting Started":
+      markdown: doc/getting_started.md
+      name: Introduction
+    "Search Filters":
+      markdown: doc/search_filters.md
+      name: Filters
+      
+  categoryOrder: ["Getting Started", "Search Filters"]
