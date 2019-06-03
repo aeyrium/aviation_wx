@@ -1,3 +1,5 @@
+import 'package:aviation_wx/src/utils/wx_options.dart';
+
 import './utils/wx_utils.dart';
 
 import './sky_condition.dart';
@@ -95,6 +97,6 @@ class METAR {
   });
 
   static Future<Map<String, List<METAR>>> download(
-          List<String> stations, int hoursBefore) =>
-      downloadMETARs(stations, hoursBefore);
+          {List<String> stations, WXOptions options}) =>
+      downloadMETARs(stations, options);
 }

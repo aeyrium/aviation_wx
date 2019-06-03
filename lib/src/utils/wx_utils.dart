@@ -1,11 +1,12 @@
 import 'dart:io';
-import 'package:aviation_wx/src/cloud_cover.dart';
 import 'package:xml/xml.dart';
 
 import '../metar.dart';
 import '../sky_condition.dart';
+import '../cloud_cover.dart';
 
-import './nooa_text_data.dart';
+import './wx_options.dart';
+import './noaa_text_data.dart';
 
 Future<XmlDocument> loadXMLFile(String path) async {
   File f = File('test/data/sample_metar_ksfo.xml');
@@ -19,10 +20,10 @@ Future<XmlDocument> loadXMLFile(String path) async {
 /// [METAR]s for each of the [stations].
 Future<Map<String, List<METAR>>> downloadMETARs(
   List<String> stations,
-  int hoursBefore,
+  WXOptions options,
 ) async {
-  var xmlnodes =
-      await NOOATextData.downloadAsXml('metars', hoursBefore, stations);
+  var xmlnodes = await NOAATextData.downloadAsXml(
+      'metars', options.hoursBeforeNow, stations);
   Map<String, List<METAR>> metars = {};
 
   xmlnodes.forEach((node) {

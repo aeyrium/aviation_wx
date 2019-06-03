@@ -1,12 +1,12 @@
 import 'package:http/http.dart' as http;
 import 'package:xml/xml.dart' as xml;
 
-/// Low-level wrapper around the NOOA Text Data Server
+/// Low-level wrapper around the NOAA Text Data Server
 /// HTTP network requests protocols.
-class NOOATextData {
+class NOAATextData {
   static Future<List<xml.XmlElement>> downloadAsXml(
     String type,
-    int hoursBefore,
+    double hoursBefore,
     List<String> stations,
   ) async {
     String stationString = stations.join(',');
@@ -33,7 +33,7 @@ class NOOATextData {
       print('Network Error: $e');
       throw e;
     }
-    var meta = NOOAResponseMeta();
+    var meta = NOAAResponseMeta();
     List<xml.XmlElement> data = List();
     if (response.statusCode == 200) {
       var document = xml.parse(response.body);
@@ -78,7 +78,7 @@ class NOOATextData {
   }
 }
 
-class NOOAResponseMeta {
+class NOAAResponseMeta {
   String requestIndex;
   String dataSource;
   List<String> errors = [];

@@ -1,10 +1,10 @@
 import 'package:test/test.dart';
-import 'package:aviation_wx/src/utils/nooa_text_data.dart';
+import 'package:aviation_wx/src/utils/noaa_text_data.dart';
 
 main() {
-  group('NOOA Text Data', () {
+  group('NOAA Text Data', () {
     test('Get METARs', () async {
-      var xmlMetars = await NOOATextData.downloadAsXml(
+      var xmlMetars = await NOAATextData.downloadAsXml(
         'metars',
         1,
         ['KSFO', 'KOAK'],
@@ -16,7 +16,7 @@ main() {
     });
 
     test('Get TAFs', () async {
-      var xmlMetars = await NOOATextData.downloadAsXml(
+      var xmlMetars = await NOAATextData.downloadAsXml(
         'tafs',
         1,
         ['KSFO', 'KOAK'],
@@ -28,7 +28,7 @@ main() {
     });
 
     test('Get Sations', () async {
-      var xmlMetars = await NOOATextData.downloadAsXml(
+      var xmlMetars = await NOAATextData.downloadAsXml(
         'stations',
         1,
         ['KSFO', 'KOAK'],
@@ -42,7 +42,7 @@ main() {
     test('Response 200 with errors', () async {
       expect(
           () async =>
-              await NOOATextData.downloadAsXml('badvalue', 1, ['KSFO', 'KOAK']),
+              await NOAATextData.downloadAsXml('badvalue', 1, ['KSFO', 'KOAK']),
           throwsArgumentError);
     });
   });
