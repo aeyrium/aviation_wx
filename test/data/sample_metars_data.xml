@@ -1,0 +1,133 @@
+<data num_results="6">
+  <METAR>
+    <raw_text>KSFO 042256Z 30017KT 10SM FEW037 24/11 A2987 RMK AO2 SLP114 T02440111 $</raw_text>
+    <station_id>KSFO</station_id>
+    <observation_time>2019-06-04T22:56:00Z</observation_time>
+    <latitude>37.62</latitude>
+    <longitude>-122.37</longitude>
+    <temp_c>24.4</temp_c>
+    <dewpoint_c>11.1</dewpoint_c>
+    <wind_dir_degrees>300</wind_dir_degrees>
+    <wind_speed_kt>17</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.870079</altim_in_hg>
+    <sea_level_pressure_mb>1011.4</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3700" />
+    <flight_category>VFR</flight_category>
+    <metar_type>METAR</metar_type>
+    <elevation_m>3.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KOAK 042253Z 29011KT 10SM FEW030 26/13 A2988 RMK AO2 SLP117 T02610128</raw_text>
+    <station_id>KOAK</station_id>
+    <observation_time>2019-06-04T22:53:00Z</observation_time>
+    <latitude>37.72</latitude>
+    <longitude>-122.23</longitude>
+    <temp_c>26.1</temp_c>
+    <dewpoint_c>12.8</dewpoint_c>
+    <wind_dir_degrees>290</wind_dir_degrees>
+    <wind_speed_kt>11</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.878937</altim_in_hg>
+    <sea_level_pressure_mb>1011.7</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3000" />
+    <flight_category>VFR</flight_category>
+    <metar_type>METAR</metar_type>
+    <elevation_m>26.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KSFO 042156Z 29017KT 10SM FEW037 26/11 A2989 RMK AO2 SLP120 T02610111 $</raw_text>
+    <station_id>KSFO</station_id>
+    <observation_time>2019-06-04T21:56:00Z</observation_time>
+    <latitude>37.62</latitude>
+    <longitude>-122.37</longitude>
+    <temp_c>26.1</temp_c>
+    <dewpoint_c>11.1</dewpoint_c>
+    <wind_dir_degrees>290</wind_dir_degrees>
+    <wind_speed_kt>17</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.890747</altim_in_hg>
+    <sea_level_pressure_mb>1012.0</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3700" />
+    <flight_category>VFR</flight_category>
+    <metar_type>METAR</metar_type>
+    <elevation_m>3.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KOAK 042153Z 31008KT 10SM FEW030 26/13 A2990 RMK AO2 SLP124 T02610128</raw_text>
+    <station_id>KOAK</station_id>
+    <observation_time>2019-06-04T21:53:00Z</observation_time>
+    <latitude>37.72</latitude>
+    <longitude>-122.23</longitude>
+    <temp_c>26.1</temp_c>
+    <dewpoint_c>12.8</dewpoint_c>
+    <wind_dir_degrees>310</wind_dir_degrees>
+    <wind_speed_kt>8</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.899607</altim_in_hg>
+    <sea_level_pressure_mb>1012.4</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3000" />
+    <flight_category>VFR</flight_category>
+    <metar_type>SPECI</metar_type>
+    <elevation_m>26.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KSFO 042056Z 30014KT 10SM FEW035 24/12 A2990 RMK AO2 SLP125 T02440122 58011 $</raw_text>
+    <station_id>KSFO</station_id>
+    <observation_time>2019-06-04T20:56:00Z</observation_time>
+    <latitude>37.62</latitude>
+    <longitude>-122.37</longitude>
+    <temp_c>24.4</temp_c>
+    <dewpoint_c>12.2</dewpoint_c>
+    <wind_dir_degrees>300</wind_dir_degrees>
+    <wind_speed_kt>14</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.899607</altim_in_hg>
+    <sea_level_pressure_mb>1012.5</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3500" />
+    <flight_category>VFR</flight_category>
+    <three_hr_pressure_tendency_mb>-1.1</three_hr_pressure_tendency_mb>
+    <metar_type>METAR</metar_type>
+    <elevation_m>3.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KOAK 042053Z 30009KT 10SM FEW030 26/13 A2992 RMK AO2 SLP130 T02560128 58009</raw_text>
+    <station_id>KOAK</station_id>
+    <observation_time>2019-06-04T20:53:00Z</observation_time>
+    <latitude>37.72</latitude>
+    <longitude>-122.23</longitude>
+    <temp_c>25.6</temp_c>
+    <dewpoint_c>12.8</dewpoint_c>
+    <wind_dir_degrees>300</wind_dir_degrees>
+    <wind_speed_kt>9</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.920275</altim_in_hg>
+    <sea_level_pressure_mb>1013.0</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="3000" />
+    <flight_category>VFR</flight_category>
+    <three_hr_pressure_tendency_mb>-0.9</three_hr_pressure_tendency_mb>
+    <metar_type>METAR</metar_type>
+    <elevation_m>26.0</elevation_m>
+  </METAR>
+</data>

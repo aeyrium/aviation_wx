@@ -1,0 +1,96 @@
+<data num_results="4">
+  <METAR>
+    <raw_text>KSFO 050556Z 29009KT 10SM FEW200 16/10 A2988 RMK AO2 SLP118 T01560100 10228 20150 52011 $</raw_text>
+    <station_id>KSFO</station_id>
+    <observation_time>2019-06-05T05:56:00Z</observation_time>
+    <latitude>37.62</latitude>
+    <longitude>-122.37</longitude>
+    <temp_c>15.6</temp_c>
+    <dewpoint_c>10.0</dewpoint_c>
+    <wind_dir_degrees>290</wind_dir_degrees>
+    <wind_speed_kt>9</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.878937</altim_in_hg>
+    <sea_level_pressure_mb>1011.8</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="20000" />
+    <flight_category>VFR</flight_category>
+    <three_hr_pressure_tendency_mb>1.1</three_hr_pressure_tendency_mb>
+    <maxT_c>22.8</maxT_c>
+    <minT_c>15.0</minT_c>
+    <metar_type>METAR</metar_type>
+    <elevation_m>3.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KRNO 050555Z 24003KT 10SM FEW095 24/08 A3008 RMK AO2 SLP127 T02440083 10328 20244 51016 $</raw_text>
+    <station_id>KRNO</station_id>
+    <observation_time>2019-06-05T05:55:00Z</observation_time>
+    <latitude>39.5</latitude>
+    <longitude>-119.77</longitude>
+    <temp_c>24.4</temp_c>
+    <dewpoint_c>8.3</dewpoint_c>
+    <wind_dir_degrees>240</wind_dir_degrees>
+    <wind_speed_kt>3</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>30.079725</altim_in_hg>
+    <sea_level_pressure_mb>1012.7</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="9500" />
+    <flight_category>VFR</flight_category>
+    <three_hr_pressure_tendency_mb>1.6</three_hr_pressure_tendency_mb>
+    <maxT_c>32.8</maxT_c>
+    <minT_c>24.4</minT_c>
+    <metar_type>SPECI</metar_type>
+    <elevation_m>1342.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KSFO 050456Z 29009KT 10SM FEW200 16/10 A2987 RMK AO2 SLP115 T01560100 $</raw_text>
+    <station_id>KSFO</station_id>
+    <observation_time>2019-06-05T04:56:00Z</observation_time>
+    <latitude>37.62</latitude>
+    <longitude>-122.37</longitude>
+    <temp_c>15.6</temp_c>
+    <dewpoint_c>10.0</dewpoint_c>
+    <wind_dir_degrees>290</wind_dir_degrees>
+    <wind_speed_kt>9</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>29.870079</altim_in_hg>
+    <sea_level_pressure_mb>1011.5</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="20000" />
+    <flight_category>VFR</flight_category>
+    <metar_type>METAR</metar_type>
+    <elevation_m>3.0</elevation_m>
+  </METAR>
+  <METAR>
+    <raw_text>KRNO 050455Z 29009KT 10SM FEW095 26/08 A3007 RMK AO2 SLP122 T02560083 $</raw_text>
+    <station_id>KRNO</station_id>
+    <observation_time>2019-06-05T04:55:00Z</observation_time>
+    <latitude>39.5</latitude>
+    <longitude>-119.77</longitude>
+    <temp_c>25.6</temp_c>
+    <dewpoint_c>8.3</dewpoint_c>
+    <wind_dir_degrees>290</wind_dir_degrees>
+    <wind_speed_kt>9</wind_speed_kt>
+    <visibility_statute_mi>10.0</visibility_statute_mi>
+    <altim_in_hg>30.070866</altim_in_hg>
+    <sea_level_pressure_mb>1012.2</sea_level_pressure_mb>
+    <quality_control_flags>
+      <auto_station>TRUE</auto_station>
+      <maintenance_indicator_on>TRUE</maintenance_indicator_on>
+    </quality_control_flags>
+    <sky_condition sky_cover="FEW" cloud_base_ft_agl="9500" />
+    <flight_category>VFR</flight_category>
+    <metar_type>METAR</metar_type>
+    <elevation_m>1342.0</elevation_m>
+  </METAR>
+</data>

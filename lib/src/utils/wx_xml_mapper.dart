@@ -5,28 +5,20 @@ import '../metar.dart';
 import '../sky_condition.dart';
 import '../cloud_cover.dart';
 
-import './wx_options.dart';
-import './noaa_text_data.dart';
-
-Future<XmlDocument> loadXMLFile(String path) async {
-  File f = File('test/data/sample_metar_ksfo.xml');
+Future<XmlElement> loadXMLFile(String path) async {
+  File f = File(path);
   String xmlString = await f.readAsString();
-  return parse(xmlString);
+  return parse(xmlString).rootElement;
 }
 
 /// Returns a map of [METAR]s grouped by station and observation time.
 /// The param [stations] is a list of station identifiers in ICAO format
 /// and [hoursBefore] is the number of hours earlier to return previous
 /// [METAR]s for each of the [stations].
-Future<Map<String, List<METAR>>> downloadMETARs(
-  List<String> stations,
-  WXOptions options,
-) async {
-  var xmlnodes = await NOAATextData.downloadAsXml(
-      'metars', options.hoursBeforeNow, stations);
+Map<String, List<METAR>> convertXmlToMetars(XmlElement rootNote) {
   Map<String, List<METAR>> metars = {};
-
-  xmlnodes.forEach((node) {
+  print(rootNote.name);
+  rootNote.findElements('METAR').forEach((node) {
     var metar = parseMETAR(node);
     if (metars[metar.station] == null) {
       metars[metar.station] = List();
@@ -78,7 +70,7 @@ METAR parseMETAR(XmlElement node) {
       } else if (e.name.local == 'sky_condition') {
         metar.skyConditions.add(SkyCondition(
           cover: CloudCover.tryParse(e.getAttribute('sky_cover')),
-          base: int.parse(e.getAttribute('cloud_base_ft_agl')),
+          base: int.tryParse(e.getAttribute('cloud_base_ft_agl') ?? 'None'),
         ));
       } else if (e.name.local == 'flight_category') {
         metar.flightCategory = e.text;

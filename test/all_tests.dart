@@ -1,9 +1,9 @@
 import './metar_test.dart' as metar_test;
-import './noaa_text_data_test.dart' as noaa_test;
-import './wx_service_test.dart' as wx_test;
+import './utils/wx_text_data_service_test.dart' as wx_text_data_service_test;
+import './utils/wx_xml_mapper_test.dart' as wx_xml_mapper_test;
 
 main() {
   metar_test.main();
-  noaa_test.main();
-  wx_test.main();
+  wx_text_data_service_test.main();
+  wx_xml_mapper_test.main();
 }

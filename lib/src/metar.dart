@@ -1,7 +1,3 @@
-import 'package:aviation_wx/src/utils/wx_options.dart';
-
-import './utils/wx_utils.dart';
-
 import './sky_condition.dart';
 
 /// METAR is a format for reporting weather information. A METAR weather report is
@@ -65,7 +61,7 @@ class METAR {
   String flightCategory;
 
   /// Snow depth on the ground (in inches)
-  double snowDepth = 0;
+  double snowDepth;
 
   /// Vertical visibility (in feet)
   int verticalVisibility;
@@ -82,21 +78,26 @@ class METAR {
     this.temp,
     this.dewPoint,
     this.windDirection,
-    this.windSpeed,
-    this.windGust,
+    this.windSpeed = 0,
+    this.windGust = 0,
     this.visibility,
     this.altimeter,
     this.seaLevelPressure,
     this.precipitation,
     this.wxString,
-    this.skyConditions,
+    //this.skyConditions,
+    List<SkyCondition> skyConditions,
     this.flightCategory,
-    this.snowDepth,
+    this.snowDepth = 0,
     this.verticalVisibility,
     this.elevation,
-  });
+  }) {
+    if (skyConditions != null) {
+      this.skyConditions.addAll(skyConditions);
+    }
+  }
 
-  static Future<Map<String, List<METAR>>> download(
-          {List<String> stations, WXOptions options}) =>
-      downloadMETARs(stations, options);
+  // static Future<Map<String, List<METAR>>> download(
+  //         {List<String> stations, WXOptions options}) =>
+  //     downloadMETARs(stations, options);
 }

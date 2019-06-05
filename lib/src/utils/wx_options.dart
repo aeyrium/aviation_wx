@@ -16,6 +16,9 @@ class WXOptions {
   /// (typeType=issue).
   bool issue;
 
+  /// If true, post filter results after applying all other constraints
+  bool postfilter;
+
   /// Limits the [METAR] or [TAF] to stations located within the
   /// specified radius.
   RadialDistance radius;
@@ -25,21 +28,64 @@ class WXOptions {
   LonLatRect area;
 
   /// The degree distance is the distance (based on longitude and latitude)
-  /// between stations. The larger the value of minDegreeDistance, the less
+  /// between stations. The larger the value of [degreeDistance], the less
   /// dense the results.  Duplicate stations are filtered and the most recent
   /// of duplicate stations is reported.
   ///
   /// Allowed values are between 0 and 90
-  int minDegreeDistance;
+  int degreeDistance;
 
   WXOptions({
-    this.hoursBeforeNow = 1,
+    this.hoursBeforeNow,
     this.timeRange,
-    this.mostRecent = true,
+    this.mostRecent,
+    this.issue,
+    this.postfilter,
     this.radius,
     this.area,
-    this.minDegreeDistance,
+    this.degreeDistance,
   });
+
+  Map<String, dynamic> toQueryParams() {
+    Map<String, dynamic> params = {};
+
+    if (hoursBeforeNow != null) {
+      params['hoursBeforeNow'] = hoursBeforeNow.toString();
+    } else if (timeRange != null) {
+      params['startTime'] = timeRange.start.toString();
+      params['endTime'] = timeRange.end.toString();
+    }
+
+    if (mostRecent != null && mostRecent) {
+      if (postfilter != null) {
+        params['mostRecentForEachStation'] =
+            (postfilter) ? 'postfilter' : 'constraint';
+      } else {
+        params['mostRecent'] = mostRecent.toString();
+      }
+    }
+
+    if (issue != null) {
+      params['timeType'] = (issue) ? 'issue' : 'valid';
+    }
+
+    if (radius != null) {
+      params['radialDistance'] = radius.toString();
+    }
+
+    if (area != null) {
+      params['minLat'] = area.minLatitude.toString();
+      params['maxLat'] = area.maxLatitude.toString();
+      params['minLon'] = area.minLongitude.toString();
+      params['maxLon'] = area.maxLongitude.toString();
+    }
+
+    if (degreeDistance != null) {
+      params['minDegreeDistance'] = degreeDistance.toString();
+    }
+
+    return params;
+  }
 }
 
 /// A time range utility class
@@ -53,8 +99,8 @@ class TimeRange {
   TimeRange(this.start, this.end);
 
   TimeRange.fromDateTime(DateTime start, DateTime end) {
-    this.start = start.millisecondsSinceEpoch ~/ 0.001;
-    this.end = end.millisecondsSinceEpoch ~/ 0.001;
+    this.start = start.millisecondsSinceEpoch ~/ 1000;
+    this.end = end.millisecondsSinceEpoch ~/ 1000;
   }
 
   TimeRange.fromUTCString(String start, String end) {
