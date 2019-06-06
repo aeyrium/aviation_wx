@@ -1,4 +1,4 @@
- # aviation_wx
+ # aviation_wx (NOT READY FOR USE)
  Dart API frontend for the Aviation Digital Data Service (ADDS).
 
  ## About Aviation Digital Data Service (ADDS)
