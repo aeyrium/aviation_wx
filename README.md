@@ -50,7 +50,7 @@ You can also use a wildcard expression to specify any station that matches the e
 var metars = METAR.download(stations: ['KM*'])
 ```
 
-> **WARNING** There is a limit of 1000 responses so if your query matches too many airports, you won't get a full result set.  For example, a search for `K*` would try to return all airports in the United States, which exceeds the 1000 repsonse maximum.
+> **WARNING** There is a limit of 1000 responses so if your query matches too many airports, you won't get a full result set.  For example, a search for `K*` would try to return all airports in the United States, which exceeds the 1000 response maximum.
 
 ### Search by State/Region
 To retrieve [METAR]s or [TAF]s for an entire state or region, use the `@` symbol followed
