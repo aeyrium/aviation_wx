@@ -100,10 +100,12 @@ class METAR {
     }
   }
 
+  /// Retrieve [METAR]s from station/stations and [WXOptions] option filters.
   static Future<Map<String, List<METAR>>> download({
     List<String> stations,
     WXOptions options,
   }) async {
+    assert(stations != null);
     final metarXML = await downloadAsXml(
       WXTextDataType.metars,
       stations: stations,
