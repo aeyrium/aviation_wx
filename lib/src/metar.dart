@@ -1,4 +1,7 @@
+import '../aviation_wx.dart';
 import './sky_condition.dart';
+import 'utils/wx_text_data_service.dart';
+import 'utils/wx_xml_mapper.dart';
 
 /// METAR is a format for reporting weather information. A METAR weather report is
 /// predominantly used by pilots in fulfillment of a part of a pre-flight weather
@@ -97,7 +100,15 @@ class METAR {
     }
   }
 
-  // static Future<Map<String, List<METAR>>> download(
-  //         {List<String> stations, WXOptions options}) =>
-  //     downloadMETARs(stations, options);
+  static Future<Map<String, List<METAR>>> download({
+    List<String> stations,
+    WXOptions options,
+  }) async {
+    final metarXML = await downloadAsXml(
+      WXTextDataType.metars,
+      stations: stations,
+      options: options,
+    );
+    return convertXmlToMetars(metarXML);
+  }
 }
