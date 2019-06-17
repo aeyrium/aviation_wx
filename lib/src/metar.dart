@@ -100,7 +100,7 @@ class METAR {
     }
   }
 
-  /// Retrieve [METAR]s from station/stations and [WXOptions] option filters.
+  /// Retrieve a Map <station, [METAR]s> from station/stations and [WXOptions] option filters.
   static Future<Map<String, List<METAR>>> download({
     List<String> stations,
     WXOptions options,
@@ -109,7 +109,7 @@ class METAR {
     final metarXML = await downloadAsXml(
       WXTextDataType.metars,
       stations: stations,
-      options: options,
+      options: options ?? WXOptions(hoursBeforeNow: 1),
     );
     return convertXmlToMetars(metarXML);
   }

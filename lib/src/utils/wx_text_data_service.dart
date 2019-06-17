@@ -10,7 +10,7 @@ Future<xml.XmlElement> downloadAsXml(
   WXOptions options,
 }) async {
   String stationString = stations.join(',');
-  Map<String, dynamic> queryParams = options?.toQueryParams() ?? {};
+  Map<String, dynamic> queryParams = options.toQueryParams();
   queryParams['stationString'] = stationString;
   queryParams['dataSource'] = type.toString().split('.')[1];
   queryParams['requestType'] = 'retrieve';
