@@ -109,7 +109,7 @@ class METAR {
     final metarXML = await downloadAsXml(
       WXTextDataType.metars,
       stations: stations,
-      options: options ?? WXOptions(mostRecent: true),
+      options: options ?? WXOptions(hoursBeforeNow: 1),
     );
     return convertXmlToMetars(metarXML);
   }

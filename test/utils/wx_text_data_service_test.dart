@@ -34,7 +34,7 @@ main() {
         options: WXOptions(timeRange: timeRange),
       );
       var metarTags = data.findElements('METAR');
-      expect(metarTags.length, 10);
+      expect(metarTags.length >= 10, isTrue);
     });
   });
 
