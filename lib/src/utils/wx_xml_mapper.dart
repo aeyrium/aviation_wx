@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:aviation_wx/src/utils/wx_string.dart';
 import 'package:xml/xml.dart';
 
 import '../metar.dart';
@@ -82,6 +83,8 @@ METAR parseMETAR(XmlElement node) {
         metar.elevation = double.parse(e.text);
       } else if (e.name.local == 'precip_in') {
         metar.precipitation = double.parse(e.text);
+      } else if (e.name.local == 'wx_string') {
+        metar.wxString = WXString(text);
       }
     }
   });

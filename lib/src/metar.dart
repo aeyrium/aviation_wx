@@ -2,6 +2,7 @@ import '../aviation_wx.dart';
 import './sky_condition.dart';
 import 'utils/wx_text_data_service.dart';
 import 'utils/wx_xml_mapper.dart';
+import 'utils/wx_string.dart';
 
 /// METAR is a format for reporting weather information. A METAR weather report is
 /// predominantly used by pilots in fulfillment of a part of a pre-flight weather
@@ -51,7 +52,7 @@ class METAR {
   double precipitation;
 
   /// See [wx string descriptions](https://aviationweather.gov/docs/metar/wxSymbols_anno2.pdf)
-  String wxString;
+  WXString wxString;
 
   /// May contian up to four levels of sky cover and base can be reported under the sky_conditions field;
   /// OVX present when vert_vis_ft is reported.
