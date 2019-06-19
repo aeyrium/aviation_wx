@@ -106,12 +106,9 @@ class METAR {
     List<String> stations,
     WXOptions options,
   }) async {
-    assert(stations != null);
-    final metarXML = await downloadAsXml(
-      WXTextDataType.metars,
-      stations: stations,
-      options: options ?? WXOptions(hoursBeforeNow: 3),
-    );
+    final metarXML = await downloadAsXml(WXTextDataType.metars,
+        stations: stations,
+        options: options ?? WXOptions(hoursBeforeNow: 3, mostRecent: true));
     return convertXmlToMetars(metarXML);
   }
 }
