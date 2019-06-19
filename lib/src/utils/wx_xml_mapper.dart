@@ -84,7 +84,7 @@ METAR parseMETAR(XmlElement node) {
       } else if (e.name.local == 'precip_in') {
         metar.precipitation = double.parse(e.text);
       } else if (e.name.local == 'wx_string') {
-        metar.wxString = WXString(text);
+        metar.wxString = WXString(e.text);
       }
     }
   });
