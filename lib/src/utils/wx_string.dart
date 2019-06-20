@@ -4,7 +4,7 @@ class WXString {
   WXDescriptor descriptor;
   WXType wxType;
 
-  get icon {
+  String get icon {
     return wxType?.icon;
   }
 
