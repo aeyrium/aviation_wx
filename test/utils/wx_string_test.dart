@@ -20,7 +20,7 @@ main() {
 
     test('Parse "+FC"', () {
       var wxString = WXString('+FC');
-      expect(wxString.toString(), 'Heavy Funnel Cloud Tornado Waterspout');
+      expect(wxString.toString(), 'Heavy Tornado');
     });
 
     test('Parse "FZRA"', () {
@@ -30,7 +30,7 @@ main() {
 
     test('Parse "VCDRBR"', () {
       var wxString = WXString('VCDRBR');
-      expect(wxString.toString(), 'In the Vicinity Low Drifting Mist');
+      expect(wxString.toString(), 'Low Drifting Mist Nearby');
     });
   });
 }
