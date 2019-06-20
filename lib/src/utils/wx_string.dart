@@ -111,27 +111,27 @@ class WXDescriptor {
 class WXType extends WXDescriptor {
   final String icon;
   const WXType._(String code, String label, this.icon) : super._(code, label);
-  static const DZ = WXType._('DZ', 'Drizzle', 'Clound-Drizzle-Alt.svg');
-  static const RA = WXType._('RA', 'Rain', 'Cloud-Rain.svg');
-  static const SN = WXType._('SN', 'Snow', 'Cloud-Snow-Alt.svg');
-  static const SG = WXType._('SG', 'Snow Grains', 'Cloud-Snow-Alt.svg');
-  static const IC = WXType._('IC', 'Ice Crystals', 'Cloud-Snow.svg');
-  static const PL = WXType._('PL', 'Ice Pellets', 'Cloud-Hail-Alt.svg');
-  static const GR = WXType._('GR', 'Hail', 'Cloud-Hail.svg');
-  static const GS = WXType._('GS', 'Small Hail', 'Cloud-Hail-Alt.svg');
-  static const UP = WXType._('UP', 'Unknown', 'Cloud-Rain.svg');
-  static const BR = WXType._('BR', 'Mist', 'Cloud-Fog-Alt.svg');
-  static const FG = WXType._('FG', 'Fog', 'Cloud-Fog.svg');
-  static const FU = WXType._('FU', 'Smoke', 'Cloud-Fog-Alt.svg');
-  static const VA = WXType._('VA', 'Volcanic Ash', 'Cloud-Fog-Alt.svg');
-  static const DU = WXType._('DU', 'Widespread Dust', 'Cloud-Fog-Alt.svg');
-  static const SA = WXType._('SA', 'Sand', 'Cloud-Fog-Alt.svg');
-  static const HZ = WXType._('HZ', 'Haze', 'Cloud-Fog-Alt.svg');
-  static const PY = WXType._('PY', 'Spray', 'Clound-Drizzle.svg');
-  static const PO = WXType._('PO', 'Dust Whirls', 'Cloud-Fog-Alt.svg');
-  static const SQ = WXType._('SQ', 'Squalls', 'Cloud-Wind.svg');
-  static const FC = WXType._('FC', 'Tornado', 'Tornado.svg');
-  static const SS = WXType._('SS', 'Sandstorm', 'Cloud-Fog-Alt.svg');
+  static const DZ = WXType._('DZ', 'Drizzle', 'Clound-Drizzle-Alt');
+  static const RA = WXType._('RA', 'Rain', 'Cloud-Rain');
+  static const SN = WXType._('SN', 'Snow', 'Cloud-Snow-Alt');
+  static const SG = WXType._('SG', 'Snow Grains', 'Cloud-Snow-Alt');
+  static const IC = WXType._('IC', 'Ice Crystals', 'Cloud-Snow');
+  static const PL = WXType._('PL', 'Ice Pellets', 'Cloud-Hail-Alt');
+  static const GR = WXType._('GR', 'Hail', 'Cloud-Hail');
+  static const GS = WXType._('GS', 'Small Hail', 'Cloud-Hail-Alt');
+  static const UP = WXType._('UP', 'Unknown', 'Cloud-Rain');
+  static const BR = WXType._('BR', 'Mist', 'Cloud-Fog-Alt');
+  static const FG = WXType._('FG', 'Fog', 'Cloud-Fog');
+  static const FU = WXType._('FU', 'Smoke', 'Cloud-Fog-Alt');
+  static const VA = WXType._('VA', 'Volcanic Ash', 'Cloud-Fog-Alt');
+  static const DU = WXType._('DU', 'Widespread Dust', 'Cloud-Fog-Alt');
+  static const SA = WXType._('SA', 'Sand', 'Cloud-Fog-Alt');
+  static const HZ = WXType._('HZ', 'Haze', 'Cloud-Fog-Alt');
+  static const PY = WXType._('PY', 'Spray', 'Clound-Drizzle');
+  static const PO = WXType._('PO', 'Dust Whirls', 'Cloud-Fog-Alt');
+  static const SQ = WXType._('SQ', 'Squalls', 'Cloud-Wind');
+  static const FC = WXType._('FC', 'Tornado', 'Tornado');
+  static const SS = WXType._('SS', 'Sandstorm', 'Cloud-Fog-Alt');
 
   static WXType tryParse(String str) {
     switch (str) {
