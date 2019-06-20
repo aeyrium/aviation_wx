@@ -115,7 +115,7 @@ class WXType extends WXDescriptor {
   static const RA = WXType._('RA', 'Rain', 'Cloud-Rain.svg');
   static const SN = WXType._('SN', 'Snow', 'Cloud-Snow-Alt.svg');
   static const SG = WXType._('SG', 'Snow Grains', 'Cloud-Snow-Alt.svg');
-  static const IC = WXType._('IC', 'Ice Crystals', '// Cloud-Snow.svg');
+  static const IC = WXType._('IC', 'Ice Crystals', 'Cloud-Snow.svg');
   static const PL = WXType._('PL', 'Ice Pellets', 'Cloud-Hail-Alt.svg');
   static const GR = WXType._('GR', 'Hail', 'Cloud-Hail.svg');
   static const GS = WXType._('GS', 'Small Hail', 'Cloud-Hail-Alt.svg');
