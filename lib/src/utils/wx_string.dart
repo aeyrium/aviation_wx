@@ -4,6 +4,10 @@ class WXString {
   WXDescriptor descriptor;
   WXType wxType;
 
+  get icon {
+    return wxType?.icon;
+  }
+
   WXString(this.rawString) {
     var group1 = r'\-|\+|VC';
     var group2 = 'MI|PR|BC|DR|BL|SH|TS|FZ';
