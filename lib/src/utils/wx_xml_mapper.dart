@@ -18,7 +18,6 @@ Future<XmlElement> loadXMLFile(String path) async {
 /// [METAR]s for each of the [stations].
 Map<String, List<METAR>> convertXmlToMetars(XmlElement rootNote) {
   Map<String, List<METAR>> metars = {};
-  print(rootNote.name);
   rootNote.findElements('METAR').forEach((node) {
     var metar = parseMETAR(node);
     if (metars[metar.station] == null) {
