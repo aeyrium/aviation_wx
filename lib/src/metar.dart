@@ -104,7 +104,7 @@ class METAR {
   bool get hasSkyClear =>
       skyConditions != null &&
       skyConditions.length == 1 &&
-      skyConditions.first.cover?.description?.toUpperCase() == "CLR";
+      skyConditions.first.cover?.code?.toUpperCase() == "CLR";
 
   /// Retrieve a Map <station, [METAR]s> from station/stations and [WXOptions] option filters.
   static Future<Map<String, List<METAR>>> download({
