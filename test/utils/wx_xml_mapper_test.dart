@@ -79,4 +79,40 @@ void main() {
       }
     });
   });
+
+  test('TAF parseTAF', () async {
+    var data = await loadXMLFile('test/data/sample_taf_phto.xml');
+    var taf = parseTAF(data);
+    expect(taf.station, 'PHTO');
+    expect(taf.issueTime.year, 2019);
+    expect(taf.latitude, 19.72);
+    expect(taf.longitude, -155.05);
+    expect(taf.elevation, 12.0);
+    expect(taf.forecasts.length, 3);
+    expect(taf.forecasts[0].timeFrom.year, 2019);
+    expect(taf.forecasts[0].timeTo.year, 2019);
+    expect(taf.forecasts[0].windDirection, 230);
+    expect(taf.forecasts[0].visibility, 6.21);
+    expect(taf.forecasts[0].windSpeed, 5);
+    expect(taf.forecasts[0].wxString.rawString, "VCSH");
+    expect(taf.forecasts[0].skyConditions.length, 2);
+    expect(taf.forecasts[0].skyConditions[0].base, 3000);
+    expect(taf.forecasts[0].skyConditions[1].base, 4500);
+
+    expect(taf.forecasts[1].timeFrom.year, 2019);
+    expect(taf.forecasts[1].timeTo.year, 2019);
+    expect(taf.forecasts[1].windDirection, 120);
+    expect(taf.forecasts[1].visibility, 6.21);
+    expect(taf.forecasts[1].windSpeed, 10);
+    expect(taf.forecasts[1].wxString.rawString, "VCSH");
+    expect(taf.forecasts[1].skyConditions.length, 2);
+    expect(taf.forecasts[1].skyConditions[0].base, 2500);
+    expect(taf.forecasts[1].skyConditions[1].base, 4500);
+  });
+
+  test('Download TAFs', () async {
+    var data = await loadXMLFile('test/data/sample_tafs_data.xml');
+    var tafs = convertXmlToTafs(data);
+    expect(tafs[tafs.keys.first].length, 9);
+  });
 }
