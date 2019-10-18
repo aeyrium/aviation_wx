@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<response xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XML-Schema-instance" version="1.2" xsi:noNamespaceSchemaLocation="http://aviationweather.gov/adds/schema/taf1_2.xsd">
-  <request_index>27374140</request_index>
-  <data_source name="tafs" />
-  <request type="retrieve" />
-  <errors />
-  <warnings />
-  <time_taken_ms>12</time_taken_ms>
-  <data num_results="9">
+<data num_results="9">
     <TAF>
       <raw_text>PHTO 011833Z 0119/0218 23005KT P6SM VCSH SCT030 BKN045 FM012000 12010KT P6SM VCSH SCT025 BKN045 FM020600 23007KT P6SM VCSH SCT025 SCT050</raw_text>
       <station_id>PHTO</station_id>
@@ -400,5 +392,4 @@
       </forecast>
     </TAF>
   </data>
-</response>
 
