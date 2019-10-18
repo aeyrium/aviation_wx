@@ -45,7 +45,7 @@ class TAF {
     }
   }
 
-  /// Retrieve a Map <station, [METAR]s> from station/stations and [WXOptions] option filters.
+  /// Retrieve a Map <station, [TAF]s> from station/stations and [WXOptions] option filters.
   static Future<Map<String, List<TAF>>> download({
     List<String> stations,
     WXOptions options,
